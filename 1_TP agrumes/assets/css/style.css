@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 5vw auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 5vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    background-color: green;
+    color: white;
+}
+
+.aliments {
+    border-radius: 100px 20px;
+    height: 45vw;
+    width: 45vw;
+    margin: 0 auto;
+    background-color: green;
+}
+.citronJaune, .orange, .pamplemousse{
+    display: none;
+}
+
+@media (min-width: 600px) { 
+    .citronVert, .orange, .pamplemousse{
+        display: none;
+    }
+    .citronJaune{
+        display: block;
+    }
+    h1{
+        background-color: rgb(246, 246, 115);
+        color: black;
+    }
+    .aliments{
+        border-radius: 20px 100px;
+        background-color: rgb(246, 246, 115);
+    }
+}
+
+@media (min-width: 1000px) { 
+    .citronVert, .citronJaune, .pamplemousse{
+        display: none;
+    }
+    .orange{
+        display: block;
+    }
+    h1{
+        background-color: orange;
+        color: black;
+    }
+    .aliments{
+        border-radius: 100%;
+        background-color: orange;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .citronVert, .citronJaune, .orange{
+        display: none;
+    }
+    .pamplemousse{
+        display: block;
+    }
+    h1{
+        background-color: rgb(210, 157, 60);
+        color: black;
+    }
+    .aliments{
+        border-radius: 100%;
+        background-color: rgb(210, 157, 60);
+    }
+}
+
