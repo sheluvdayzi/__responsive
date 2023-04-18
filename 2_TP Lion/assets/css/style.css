@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+body {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    border: 3px solid black;
+    width: 90%;
+    height: auto;
+    margin: 2vh;
+}
+
+#headTitle {
+    background-color: #832E4D;
+    height: 15vh;
+    padding: 2vh;
+}
+
+.navBar li {
+    display: inline-block;
+    color: white;
+}
+
+.navBar {
+    background-color: #025975;
+    display: flex;
+    justify-content: space-around;
+    height: 5vh;
+}
+
+.containerBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vh 0;
+}
+
+.allBlock {
+    width: 90%;
+    height: 30vh;
+}
+
+.block1{
+    background-color: #ABA786;
+}
+
+.block2 {
+    background-color: #025975;
+}
+
+.block3 {
+    background-color: #F5E18D;
+}
+
+.block4 {
+    background-color: #ABE24B;
+}
+
+#footerText {
+    background-color: #832E4D;
+    height: 8vh;
+}
+
+@media (min-width: 768px) {
+    #headTitle{
+        background-color: #0121FD;
+    }
+    .navBar{
+        background-color: #FD2D00;
+    }
+    .containerBlock {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2vw;
+    }
+    .allBlock {
+        width: 40vw;
+        height: 40vw;
+
+    }
+    .block1{
+        background-color: #FE9A00;
+    }
+    
+    .block2 {
+        background-color: #007501;
+    }
+    
+    .block3 {
+        background-color: #FDFD07;
+    }
+    
+    .block4 {
+        background-color: #FFB8C4;
+    }
+    #footerText {
+        background-color: #0121FD;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    #headTitle{
+        background-color: #832E4D;
+    }
+    .navBar{
+        background-color: #025975;
+    }
+    .containerBlock {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2vw;
+    }
+    .allBlock {
+        width: 40vw;
+        height: 40vw;
+
+    }
+    .block1{
+        background-color: #ABA786;
+    }
+    
+    .block2 {
+        background-color: #025975;
+    }
+    
+    .block3 {
+        background-color: #F5E18D;
+    }
+    
+    .block4 {
+        background-color: #ABE24B;
+    }
+    #footerText {
+        background-color: #832E4D;
+    }
+}
+
+@media (min-width: 1200px){
+    #headTitle{
+        background-color: #8BC228;
+    }
+    .navBar{
+        background-color: #FE307F;
+    }
+    .containerBlock {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2vw;
+    }
+    .allBlock {
+        border-radius: 50%;
+        width: 40vw;
+        height: 40vw;
+
+    }
+    .block1{
+        background-image: url(../img/lion_tp.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .block2 {
+        background-color: #6EF2A4;
+    }
+    
+    .block3 {
+        background-color: #993880;
+    }
+    
+    .block4 {
+        background-color: #F26ED3;
+    }
+    #footerText {
+        background-color: #8BC228;
+    }
+}
